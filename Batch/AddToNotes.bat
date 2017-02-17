@@ -4,6 +4,7 @@ rem Aaron Aikman
 rem For quickly adding notes to a text file in the designated path
 rem The first word entered will indicate which file to write to
 rem If the file does not exist, it will be created
+rem You may not include parenthesis in the notes
 
 @ECHO OFF
 
