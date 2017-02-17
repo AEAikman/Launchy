@@ -5,7 +5,7 @@ rem 2/17/2017
 rem For quickly adding notes to a text file in the designated path using Launchy
 rem The first word entered will indicate which file to write to
 rem If the file does not exist, it will be created
-rem You may not include parenthesis in the notes
+rem You may not include symbols in the notes including periods and commas
 
 @ECHO OFF
 
