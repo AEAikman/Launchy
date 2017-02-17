@@ -1,11 +1,12 @@
-rem AddToNotes.bat 
-rem Aaron Aikman
-rem 2/17/2017
+:: AddToNotes.bat 
+:: Aaron Aikman
+:: 2/17/2017
 
-rem For quickly adding notes to a text file in the designated path using Launchy
-rem The first word entered will indicate which file to write to
-rem If the file does not exist, it will be created
-rem You may not any symbols other than periods
+:: For quickly adding notes to a text file in the designated path using Launchy
+:: The first word entered will indicate which file to write to
+:: If the file does not exist, it will be created
+:: Many symbols do not work
+:: Some symbols that do work include . # ! / \
 
 @ECHO OFF
 
