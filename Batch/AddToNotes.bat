@@ -10,7 +10,7 @@
 :: If the file does not exist, it will be created
 :: Many symbols do not work
 :: Some symbols that do work include . # ! / \
-:: 
+:: Unfortunately, you can't include the name of the Notes file in the note because Batch can't do basic incrementation
 
 @ECHO OFF
 
@@ -22,7 +22,7 @@ exit /b
 set numberNewlines=2
 if %2==nn (set numberNewlines=1)
 if %3==nn (set numberNewlines=1)
-set notePath=Z:\InProd\Ozzy\artists\Aaron\Text\Notes\Notes_%1.txt
+set notePath=Z:\InProd\Ozzy\artists\Aaron\Text\Notes\%1.txt
 
 for /L %%i IN (1,1,%numberNewlines%) do (ECHO. >> %notePath%)
 
