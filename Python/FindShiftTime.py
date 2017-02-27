@@ -24,3 +24,4 @@ if myHours > 12:
 endTime = str(myHours) + ':' + myMinutes + ' pm'
 hourglassArgs = [r'C:\Users\aaikman\AppData\Local\Launchy\plugins\Hourglass\Hourglass.exe', endTime]
 subprocess.call(hourglassArgs)
+sys.exit()
