@@ -1,7 +1,7 @@
 '''
 FindShiftTime.py
 Aaron Aikman
-Finds 4.5 hours from two entered arguments of starting hour and minute
+Arguments: Start time hour, start time minutes, timer minutes 
 Then it starts a timer for that time using Hourglass.exe
 
 '''
@@ -11,10 +11,11 @@ import subprocess
 from datetime import datetime, timedelta
 
 args = sys.argv
+minToAdd = int(args[3])
 
 s = '2013-08-11 ' + args[1] + ':' + args[2] +':49'
 mytime = datetime.strptime(s, "%Y-%m-%d %H:%M:%S")
-mytime += timedelta(minutes=((4 * 60) + 30))
+mytime += timedelta(minutes=minToAdd)
 myHours = int(mytime.strftime("%H"))
 myMinutes = mytime.strftime("%M")
 
