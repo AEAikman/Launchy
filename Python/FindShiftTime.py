@@ -7,6 +7,7 @@ Then it starts a timer for that time using Hourglass.exe
 '''
 
 import sys
+import os
 import subprocess
 from datetime import datetime, timedelta
 
@@ -29,3 +30,4 @@ endTime = str(myHours) + ':' + myMinutes + ' pm'
 hourglassArgs = [r'C:\Users\aaikman\AppData\Local\Launchy\plugins\Hourglass\Hourglass.exe', endTime]
 subprocess.call(hourglassArgs)
 sys.exit()
+os._exit
